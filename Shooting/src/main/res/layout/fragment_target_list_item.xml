@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/target_list_item_padding"
+		tools:context=".MainActivity"
+		android:background="@color/target_list_item_background">
+
+	<ImageView
+			android:id="@+id/target_list_item_image"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|top"
+			android:layout_weight="5"
+			android:layout_marginRight="@dimen/target_list_item_image_margin"
+			android:adjustViewBounds="true"
+			android:contentDescription="@string/label_target_list_item_image"/>
+
+	<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="5">
+
+		<TextView
+				android:id="@+id/target_list_item_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				style="@style/TextView.Large"
+				android:hint="@string/hint_target_date" />
+
+		<TextView
+				android:id="@+id/target_list_item_firearm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/target_list_item_date"
+				android:layout_alignParentLeft="true"
+				style="@style/TextView.Large"
+				android:hint="@string/hint_target_firearm" />
+
+		<TextView
+				android:id="@+id/target_list_item_ammo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/target_list_item_firearm"
+				android:layout_alignParentLeft="true"
+				android:hint="@string/hint_target_ammo" />
+
+		<LinearLayout
+				android:id="@+id/target_list_item_distance_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/target_list_item_ammo"
+				android:orientation="horizontal">
+
+			<TextView
+					android:id="@+id/target_list_item_distance"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/hint_target_distance" />
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/label_target_list_item_yards" />
+		</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/target_list_item_shots_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@id/target_list_item_distance_container"
+				android:orientation="horizontal">
+			<TextView
+					android:id="@+id/target_list_item_shots"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="@string/hint_target_shots" />
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/label_target_list_item_rounds" />
+		</LinearLayout>
+
+		<TextView
+				android:id="@+id/target_list_item_notes"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/target_list_item_shots_container"
+				android:layout_marginTop="@dimen/target_list_item_notes_margin"
+				style="@style/TextView.Small"
+				android:typeface="monospace"
+				android:hint="@string/hint_target_notes" />
+	</RelativeLayout>
+</LinearLayout>

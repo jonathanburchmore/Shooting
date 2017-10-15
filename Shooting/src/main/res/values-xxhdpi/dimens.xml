@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="firearm_list_item_image_width">115dp</dimen>
+	<dimen name="firearm_list_item_image_height">85dp</dimen>
+</resources>

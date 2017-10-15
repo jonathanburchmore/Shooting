@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+			android:id="@+id/menu_target_list_search"
+			android:title="@string/menu_target_list_search"
+			android:icon="@android:drawable/ic_menu_search"
+			android:showAsAction="ifRoom|collapseActionView"
+			android:actionViewClass="android.widget.SearchView"/>
+	<item
+			android:id="@+id/menu_target_list_camera"
+			android:title="@string/menu_target_list_camera"
+		  	android:icon="@android:drawable/ic_menu_camera"
+		  	android:showAsAction="ifRoom" />
+	<item
+			android:id="@+id/menu_target_list_gallery"
+			android:title="@string/menu_target_list_gallery"
+			android:icon="@android:drawable/ic_menu_gallery"
+			android:showAsAction="ifRoom" />
+</menu>

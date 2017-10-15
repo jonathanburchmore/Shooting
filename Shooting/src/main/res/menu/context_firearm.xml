@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+			android:id="@+id/menu_context_firearm_view"
+			android:title="@string/menu_context_firearm_view" />
+	<item
+			android:id="@+id/menu_context_firearm_edit_profile"
+			android:title="@string/menu_context_firearm_edit_profile" />
+	<item
+			android:id="@+id/menu_context_firearm_delete"
+			android:title="@string/menu_context_firearm_delete" />
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	<ImageView
+			android:id="@+id/firearm_photo_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/firearm_profile_image_padding"
+			android:focusable="true"
+			android:background="@drawable/firearm_photo_background"
+			android:contentDescription="@string/label_firearm_photo_image"/>
+
+	<ImageView
+			android:id="@+id/firearm_photo_list_overlay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@id/firearm_photo_image"
+			android:layout_alignRight="@id/firearm_photo_image"
+			android:src="@drawable/ic_list_photo_overlay"
+			android:contentDescription="@string/label_firearm_photo_list_photo"/>
+</RelativeLayout>

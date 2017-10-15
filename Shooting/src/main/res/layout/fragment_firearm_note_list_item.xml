@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/firearm_note_list_item_horizontal_padding"
+		android:paddingRight="@dimen/firearm_note_list_item_horizontal_padding"
+		android:paddingTop="@dimen/firearm_note_list_item_vertical_padding"
+		android:paddingBottom="@dimen/firearm_note_list_item_vertical_padding"
+		tools:context=".FirearmActivity">
+
+	<TextView
+			android:id="@+id/firearm_note_list_item_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:gravity="right"
+			android:textColor="@color/firearm_note_list_item_date"
+			android:hint="@string/hint_firearm_note_date" />
+
+	<TextView
+			android:id="@+id/firearm_note_list_item_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/firearm_note_list_item_date"
+			android:typeface="monospace"
+			android:hint="@string/hint_firearm_note_text" />
+</RelativeLayout>

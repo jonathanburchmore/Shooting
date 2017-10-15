@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".TargetActivity">
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/activity_vertical_margin"
+			android:paddingBottom="@dimen/activity_vertical_margin"
+			android:paddingLeft="@dimen/activity_horizontal_margin"
+			android:paddingRight="@dimen/activity_horizontal_margin">
+
+		<ImageView
+				android:id="@+id/target_image"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|top"
+				android:layout_weight="5"
+				android:layout_marginRight="@dimen/target_image_margin"
+				android:src="@android:drawable/ic_menu_camera"
+				android:adjustViewBounds="true"
+				android:background="@drawable/target_image_background"
+				android:focusable="true"
+				android:padding="@dimen/target_image_padding"
+				android:contentDescription="@string/label_target_image" />
+
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="5">
+			<include layout="@layout/activity_target_form" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

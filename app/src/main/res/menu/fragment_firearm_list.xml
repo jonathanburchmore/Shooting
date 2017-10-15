@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+			android:id="@+id/menu_firearm_list_search"
+			android:title="@string/menu_firearm_list_search"
+			android:icon="@android:drawable/ic_menu_search"
+			android:showAsAction="ifRoom|collapseActionView"
+			android:actionViewClass="android.widget.SearchView"/>
+	<item
+			android:id="@+id/menu_firearm_list_add"
+			android:title="@string/menu_firearm_list_add"
+			android:icon="@android:drawable/ic_menu_add"
+			android:showAsAction="always"
+			android:titleCondensed="@string/menu_firearm_list_add" />
+</menu>

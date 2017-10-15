@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/load_list_item_padding"
+		tools:context=".MainActivity">
+	<TextView
+			android:id="@+id/load_list_item_ccount"
+			android:layout_width="@dimen/load_list_item_ccount_width"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/load_list_item_bullet"
+			android:layout_marginLeft="@dimen/load_list_item_ccount_margin"
+			android:gravity="right|center_vertical"
+			style="@style/TextView.Large"
+			android:textStyle="bold"
+			android:hint="@string/hint_load_ccount" />
+
+	<LinearLayout
+			android:id="@+id/load_list_item_chargegrpowder"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/load_list_item_ccount"
+			android:orientation="horizontal">
+		<TextView
+				android:id="@+id/load_list_item_charge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:hint="@string/hint_load_charge" />
+
+		<TextView
+				android:id="@+id/load_list_item_grains"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_load_list_item_grains" />
+
+		<TextView
+				android:id="@+id/load_list_item_powder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_load_powder" />
+	</LinearLayout>
+
+	<TextView
+			android:id="@+id/load_list_item_caliber"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@id/load_list_item_chargegrpowder"
+			android:hint="@string/hint_load_caliber"/>
+
+	<LinearLayout
+			android:id="@+id/load_list_item_oal_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/load_list_item_chargegrpowder"
+			android:layout_toLeftOf="@id/load_list_item_ccount"
+			android:orientation="horizontal">
+		<TextView
+				android:id="@+id/load_list_item_oal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:hint="@string/hint_load_oal" />
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_load_list_item_oal" />
+	</LinearLayout>
+
+	<TextView
+			android:id="@id/load_list_item_bullet"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/load_list_item_caliber"
+			android:layout_toLeftOf="@id/load_list_item_oal_container"
+			android:hint="@string/hint_load_bullet" />
+</RelativeLayout>

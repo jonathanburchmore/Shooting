@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/firearm_list_item_padding"
+		android:baselineAligned="false"
+		tools:context=".MainActivity"
+		android:background="@color/firearm_list_item_background">
+
+	<RelativeLayout
+			android:layout_width="@dimen/firearm_list_item_image_width"
+			android:layout_height="@dimen/firearm_list_item_image_height"
+			android:layout_marginRight="@dimen/firearm_list_item_image_margin">
+		<ImageView
+				android:id="@+id/firearm_list_item_image"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:contentDescription="@string/label_firearm_list_item_image"/>
+	</RelativeLayout>
+
+	<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+		<TextView
+				android:id="@+id/firearm_list_item_firearm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/TextView.Large"
+				android:hint="@string/hint_firearm" />
+
+		<TextView
+				android:id="@+id/firearm_list_item_caliber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:hint="@string/hint_firearm_caliber" />
+
+		<LinearLayout
+				android:id="@+id/firearm_list_item_barrel_container"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<TextView
+					android:id="@+id/firearm_list_item_barrel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:hint="@string/hint_firearm_barrel" />
+
+			<TextView
+					android:id="@+id/firearm_list_item_barrel_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="right"
+					android:text="@string/label_firearm_list_item_barrel_text" />
+		</LinearLayout>
+
+		<TextView
+				android:id="@+id/firearm_list_item_serial"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_firearm_serial" />
+	</LinearLayout>
+</LinearLayout>

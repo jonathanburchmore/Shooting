@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+			android:id="@+id/menu_firearm_disposition_add"
+			android:title="@string/menu_firearm_disposition_add"
+			android:icon="@android:drawable/ic_menu_add"
+			android:showAsAction="ifRoom"
+			android:titleCondensed="@string/menu_firearm_disposition_add" />
+	<item
+			android:id="@+id/menu_firearm_disposition_edit"
+			android:title="@string/menu_firearm_disposition_edit"
+			android:icon="@android:drawable/ic_menu_edit"
+			android:showAsAction="always"
+			android:titleCondensed="@string/menu_firearm_disposition_edit" />
+</menu>

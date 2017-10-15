@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="firearm_list_background">#ddd</color>
+	<color name="firearm_list_item_background">#fff</color>
+
+	<color name="firearm_profile_image_background_pressed">#ff00ddff</color>
+	<color name="firearm_profile_image_background_focused">#ff00ddff</color>
+	<color name="firearm_profile_image_background">#00ffffff</color>
+
+	<color name="firearm_note_list_item_date">#808080</color>
+
+	<color name="target_list_background">#ddd</color>
+	<color name="target_list_item_background">#fff</color>
+
+	<color name="load_note_list_item_date">#808080</color>
+</resources>

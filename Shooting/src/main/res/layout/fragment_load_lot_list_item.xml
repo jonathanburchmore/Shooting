@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/load_lot_list_item_padding"
+		tools:context=".MainActivity">
+	<TextView
+			android:id="@+id/load_lot_list_item_ccount"
+			android:layout_width="@dimen/load_lot_list_item_ccount_width"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/load_lot_list_item_primer"
+			android:layout_marginLeft="@dimen/load_lot_list_item_ccount_margin"
+			android:gravity="right|center_vertical"
+			style="@style/TextView.Large"
+			android:textStyle="bold"
+			android:hint="@string/hint_load_lot_ccount" />
+
+	<TextView
+			android:id="@+id/load_lot_list_item_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@id/load_lot_list_item_ccount"
+			android:hint="@string/hint_load_lot_date"/>
+
+	<LinearLayout
+			android:id="@+id/load_lot_list_item_labeled_lot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@id/load_lot_list_item_date"
+			android:orientation="horizontal">
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/label_load_lot_list_item_lot" />
+
+		<TextView
+				android:id="@+id/load_lot_list_item_lot"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_load_lot" />
+	</LinearLayout>
+
+	<TextView
+			android:id="@id/load_lot_list_item_primer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@id/load_lot_list_item_labeled_lot"
+			android:layout_toLeftOf="@id/load_lot_list_item_ccount"
+			android:hint="@string/hint_load_lot_primer" />
+</RelativeLayout>

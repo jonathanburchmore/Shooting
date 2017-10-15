@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TextView.Regular" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+
+	<style name="TextView.Large" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+	</style>
+
+	<style name="AutoCompleteTextView.Regular" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+
+	<style name="EditText.Regular" parent="android:Widget.Holo.Light.EditText">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+
+	<style name="DateSpinner" parent="android:Widget.Holo.Light.Spinner">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">36dp</item>
+	</style>
+
+	<style name="SpinnerItem.Regular" parent="android:Widget.Holo.Light.TextView.SpinnerItem">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+
+	<style name="SpinnerDropDownItem.Regular" parent="android:Widget.Holo.Light.DropDownItem.Spinner">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+</resources>

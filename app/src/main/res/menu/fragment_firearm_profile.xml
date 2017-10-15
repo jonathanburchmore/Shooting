@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+			android:id="@+id/menu_firearm_profile_camera"
+			android:title="@string/menu_firearm_profile_camera"
+		  	android:icon="@android:drawable/ic_menu_camera"
+		  	android:showAsAction="ifRoom" />
+
+	<item
+			android:id="@+id/menu_firearm_profile_gallery"
+			android:title="@string/menu_firearm_profile_gallery"
+			android:icon="@android:drawable/ic_menu_gallery"
+			android:showAsAction="ifRoom" />
+
+	<item
+			android:id="@+id/menu_firearm_profile_edit"
+			android:title="@string/menu_firearm_profile_edit"
+			android:icon="@android:drawable/ic_menu_edit"
+			android:showAsAction="ifRoom"
+			android:titleCondensed="@string/menu_firearm_profile_edit" />
+
+	<item
+			android:id="@+id/menu_firearm_profile_delete"
+			android:title="@string/menu_firearm_profile_delete"
+			android:icon="@android:drawable/ic_menu_delete"
+			android:showAsAction="ifRoom"
+			android:titleCondensed="@string/menu_firearm_profile_delete" />
+</menu>

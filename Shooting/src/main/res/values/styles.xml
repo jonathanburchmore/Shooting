@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		<item name="android:textViewStyle">@style/TextView.Regular</item>
+		<item name="android:editTextStyle">@style/EditText.Regular</item>
+		<item name="android:spinnerItemStyle">@style/SpinnerItem.Regular</item>
+    </style>
+
+	<style name="TextView.Small" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="TextView.Regular" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="TextView.Large" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+	</style>
+
+	<style name="AutoCompleteTextView.Regular" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="EditText.Small" parent="android:Widget.Holo.Light.EditText">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="EditText.Regular" parent="android:Widget.Holo.Light.EditText">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="DateSpinner" parent="android:Widget.Holo.Light.Spinner">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">36dp</item>
+	</style>
+
+	<style name="SpinnerItem.Regular" parent="android:Widget.Holo.Light.TextView.SpinnerItem">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="SpinnerDropDownItem.Regular" parent="android:Widget.Holo.Light.DropDownItem.Spinner">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+	</style>
+
+	<style name="Dialog" parent="android:Theme.Holo.Light.Dialog" />
+	<style name="ProgressBar.ListLoading" parent="android:Widget.Holo.Light.ProgressBar.Large" />
+</resources>

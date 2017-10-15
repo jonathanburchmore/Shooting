@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here. -->
+
+	<dimen name="firearm_list_item_image_width">150dp</dimen>
+	<dimen name="firearm_list_item_image_height">110dp</dimen>
+	<dimen name="firearm_note_list_item_horizontal_padding">12dp</dimen>
+
+	<integer name="target_ammo_ems">15</integer>
+	<integer name="target_type_ems">12</integer>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+		xmlns:android="http://schemas.android.com/apk/res/android"
+    	package="org.offline.shooting"
+    	android:versionCode="3"
+    	android:versionName="1.2">
+
+    <uses-sdk
+			android:minSdkVersion="14"
+			android:targetSdkVersion="16" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+			android:allowBackup="true"
+			android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme"
+			android:name="ShootingApplication">
+
+        <activity
+				android:name="org.offline.shooting.MainActivity"
+				android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity
+				android:name=".ActionSendImagesToFirearmActivity"
+				android:theme="@style/Dialog">
+			<intent-filter
+					android:label="@string/label_send_images_firearm">
+				<action android:name="android.intent.action.SEND"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="image/jpeg" />
+			</intent-filter>
+
+			<intent-filter
+					android:label="@string/label_send_images_firearm">
+				<action android:name="android.intent.action.SEND_MULTIPLE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="image/jpeg" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".FirearmActivity" />
+		<activity android:name=".FirearmProfileActivity" />
+		<activity android:name=".FirearmAcquisitionActivity" />
+		<activity android:name=".FirearmDispositionActivity" />
+		<activity android:name=".FirearmNoteActivity" />
+
+		<activity android:name=".TargetActivity">
+			<intent-filter
+					android:label="@string/label_send_image_target">
+				<action android:name="android.intent.action.SEND"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="image/jpeg" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".LoadActivity" />
+		<activity android:name=".LoadDataActivity" />
+		<activity android:name=".LoadLotActivity" />
+		<activity android:name=".LoadNoteActivity" />
+
+		<provider
+				android:name="org.offline.shooting.ShootingProvider"
+				android:authorities="org.offline.shooting.provider"
+				android:enabled="true"
+				android:exported="true"
+				android:writePermission="org.offline.shooting.ShootingProvider.WRITE"/>
+
+		<service android:name=".BackupService" android:label="label_backup_service" />
+		<service android:name=".RestoreService" android:label="label_restore_service" />
+	</application>
+</manifest>

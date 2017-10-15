@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+	<dimen name="dialog_margin">16dp</dimen>
+
+	<dimen name="backup_information_margin">32dp</dimen>
+	<dimen name="restore_information_margin">32dp</dimen>
+
+	<!-- Firearms -->
+	<dimen name="firearm_list_spacing">16dp</dimen>
+	<dimen name="firearm_list_item_padding">16dp</dimen>
+	<dimen name="firearm_list_item_image_width">75dp</dimen>
+	<dimen name="firearm_list_item_image_height">75dp</dimen>
+	<dimen name="firearm_list_item_image_margin">16dp</dimen>
+
+	<dimen name="firearm_profile_image_margin">5dp</dimen>
+	<dimen name="firearm_profile_image_padding">3dp</dimen>
+
+	<dimen name="firearm_note_list_item_horizontal_padding">6dp</dimen>
+	<dimen name="firearm_note_list_item_vertical_padding">6dp</dimen>
+
+	<!-- Targets -->
+	<dimen name="target_list_spacing">16dp</dimen>
+	<dimen name="target_list_item_padding">16dp</dimen>
+	<dimen name="target_list_item_image_margin">16dp</dimen>
+	<dimen name="target_list_item_notes_margin">32dp</dimen>
+
+	<integer name="target_ammo_ems">11</integer>
+	<integer name="target_type_ems">11</integer>
+
+	<dimen name="target_image_padding">3dp</dimen>
+	<dimen name="target_image_margin">16dp</dimen>
+	<dimen name="target_notes_margin">32dp</dimen>
+
+	<!-- Loads -->
+	<dimen name="load_list_item_padding">16dp</dimen>
+	<dimen name="load_list_item_ccount_width">70dp</dimen>
+	<dimen name="load_list_item_ccount_margin">16dp</dimen>
+
+	<dimen name="load_lot_list_item_padding">16dp</dimen>
+	<dimen name="load_lot_list_item_ccount_width">70dp</dimen>
+	<dimen name="load_lot_list_item_ccount_margin">16dp</dimen>
+
+	<dimen name="load_note_list_item_horizontal_padding">6dp</dimen>
+	<dimen name="load_note_list_item_vertical_padding">6dp</dimen>
+</resources>

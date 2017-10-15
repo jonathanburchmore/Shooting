@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+	<GridLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:rowCount="8"
+			android:columnCount="3"
+			android:useDefaultMargins="true"
+			android:layout_gravity="center_horizontal">
+
+		<!-- Date -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="0"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_date" />
+
+		<TextView
+				android:id="@+id/target_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="0"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:layout_gravity="left"
+				style="@style/DateSpinner"
+				android:hint="@string/hint_required" />
+
+		<!-- Firearm -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="1"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_firearm" />
+
+		<Spinner
+				android:id="@+id/target_firearm"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="fill_horizontal"
+				android:layout_row="1"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:fitsSystemWindows="true"
+				android:spinnerMode="dropdown"
+				android:hint="@string/hint_required"/>
+
+		<!-- Lot -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="2"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_lot" />
+
+		<EditText
+				android:id="@+id/target_lot"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="2"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:layout_gravity="left"
+				android:ems="4"
+				android:inputType="number"
+				android:hint="@string/hint_optional_short" />
+
+		<!-- Lot or Ammo -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_row="3"
+				android:layout_column="0"
+				android:layout_columnSpan="3"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_lot_or_ammo" />
+
+		<!-- Ammo -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="4"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_ammo" />
+
+		<org.offline.shooting.TabbableAutoCompleteTextView
+				android:id="@+id/target_ammo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="4"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:layout_gravity="left"
+				style="@style/AutoCompleteTextView.Regular"
+				android:ems="@integer/target_ammo_ems"
+				android:inputType="textCapWords|textNoSuggestions"
+				android:hint="@string/hint_optional" />
+
+		<!-- Type -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="5"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_type" />
+
+		<org.offline.shooting.TabbableAutoCompleteTextView
+				android:id="@+id/target_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="5"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:layout_gravity="left"
+				style="@style/AutoCompleteTextView.Regular"
+				android:ems="@integer/target_type_ems"
+				android:inputType="textCapWords|textNoSuggestions"
+				android:hint="@string/hint_optional" />
+
+		<!-- Distance -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="6"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_distance" />
+
+		<EditText
+				android:id="@+id/target_distance"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="6"
+				android:layout_column="1"
+				android:layout_gravity="left"
+				android:ems="4"
+				android:inputType="number"
+				android:hint="@string/hint_optional_short" />
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="left"
+				android:layout_row="6"
+				android:layout_column="2"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_distance_yards" />
+
+		<!-- Shots -->
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_row="7"
+				android:layout_column="0"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_target_shots" />
+
+		<EditText
+				android:id="@+id/target_shots"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_row="7"
+				android:layout_column="1"
+				android:layout_columnSpan="2"
+				android:layout_gravity="left"
+				android:ems="4"
+				android:inputType="number"
+				android:hint="@string/hint_optional_short" />
+	</GridLayout>
+
+	<!-- Notes -->
+	<EditText
+			android:id="@+id/target_notes"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="fill_horizontal"
+			android:layout_marginTop="@dimen/target_notes_margin"
+			style="@style/EditText.Small"
+			android:typeface="monospace"
+			android:inputType="textMultiLine"
+			android:hint="@string/hint_target_notes" />
+</LinearLayout>

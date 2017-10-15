@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name" >Shooting</string>
+
+	<string name="title_add_photo_to">Add Photo To&#8230;</string>
+	<string name="title_add_photos_to">Add Photos To&#8230;</string>
+
+	<string name="hint_required">Required</string>
+	<string name="hint_required_short">Req\'d</string>
+	<string name="hint_optional">Optional</string>
+	<string name="hint_optional_short">Opt\'l</string>
+	<string name="hint_unspecified">Not Specified</string>
+
+	<string name="label_backup_service">Backup</string>
+	<string name="label_processing">Processing&#8230;</string>
+	<string name="label_photo_added_to">Photo added to</string>
+	<string name="label_photos_added_to">Photos added to</string>
+	<string name="label_send_image_target">Target</string>
+	<string name="label_send_images_firearm">Firearm</string>
+	<string name="label_backup_failed">Backup failed:\u0020</string>
+	<string name="label_backup_complete">Backup complete</string>
+	<string name="label_restore_failed">Restoration failed:\u0020</string>
+	<string name="label_restore_complete">Restoration complete</string>
+	<string name="label_missing_parameter">Missing required parameter</string>
+
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_delete">Delete</string>
+	<string name="button_browse">Browse</string>
+	<string name="button_backup">Backup</string>
+	<string name="button_restore">Restore</string>
+
+	<string name="error_rename_tempfile">Unable to rename temporary file</string>
+
+	<string name="title_backup">Backup</string>
+	<string name="title_restore">Restore</string>
+
+	<!-- Firearms -->
+	<string name="title_firearm_add">Add Firearm</string>
+	<string name="title_firearm_delete">Delete Firearm</string>
+	<string name="title_firearm_profile">Profile</string>
+	<string name="title_firearm_acquisition">Acquisition</string>
+	<string name="title_firearm_acquisition_delete">Delete Acquisition</string>
+	<string name="title_firearm_disposition">Disposition</string>
+	<string name="title_firearm_disposition_delete">Delete Disposition</string>
+	<string name="title_firearm_note_add">Add Note</string>
+	<string name="title_firearm_note_edit">Note</string>
+	<string name="title_firearm_note_delete">Delete Note</string>
+
+	<string name="tab_firearms">Firearms</string>
+	<string name="tab_targets">Targets</string>
+	<string name="tab_loads">Loads</string>
+	<string name="tab_firearm_profile">Profile</string>
+	<string name="tab_firearm_acquisition">Acquisition</string>
+	<string name="tab_firearm_disposition">Disposition</string>
+	<string name="tab_firearm_targets">Targets</string>
+	<string name="tab_firearm_notes">Notes</string>
+
+	<string name="menu_backup">Backup</string>
+	<string name="menu_restore">Restore</string>
+	<string name="menu_firearm_list_search">Search</string>
+	<string name="menu_firearm_list_add">Add</string>
+	<string name="menu_firearm_profile_camera">Take Photo</string>
+	<string name="menu_firearm_profile_gallery">Select Photo</string>
+	<string name="menu_firearm_profile_edit">Edit</string>
+	<string name="menu_firearm_profile_delete">Delete</string>
+	<string name="menu_firearm_profile_save">Save</string>
+	<string name="menu_firearm_acquisition_add">Add</string>
+	<string name="menu_firearm_acquisition_edit">Edit</string>
+	<string name="menu_firearm_acquisition_save">Save</string>
+	<string name="menu_firearm_acquisition_delete">Delete</string>
+	<string name="menu_firearm_disposition_add">Add</string>
+	<string name="menu_firearm_disposition_edit">Edit</string>
+	<string name="menu_firearm_disposition_save">Save</string>
+	<string name="menu_firearm_disposition_delete">Delete</string>
+	<string name="menu_firearm_note_add">Add</string>
+	<string name="menu_firearm_note_delete">Delete</string>
+	<string name="menu_firearm_note_save">Save</string>
+
+	<string name="menu_context_firearm_view">View</string>
+	<string name="menu_context_firearm_edit_profile">Edit Profile</string>
+	<string name="menu_context_firearm_delete">Delete</string>
+	<string name="menu_context_firearm_photo_view">View</string>
+	<string name="menu_context_firearm_photo_set_as_list_photo">Set As List Photo</string>
+	<string name="menu_context_firearm_photo_delete">Delete</string>
+	<string name="menu_context_firearm_note_edit">Edit</string>
+	<string name="menu_context_firearm_note_delete">Delete</string>
+
+	<string name="hint_firearm">Firearm</string>
+	<string name="hint_firearm_search">Search Firearms</string>
+	<string name="hint_firearm_make">Make</string>
+	<string name="hint_firearm_model">Model</string>
+	<string name="hint_firearm_serial">Serial Number</string>
+	<string name="hint_firearm_type">Type</string>
+	<string name="hint_firearm_caliber">Caliber</string>
+	<string name="hint_firearm_barrel">Barrel Length</string>
+	<string name="hint_firearm_acquisition_date">Date</string>
+	<string name="hint_firearm_acquisition_from">From</string>
+	<string name="hint_firearm_acquisition_license">License</string>
+	<string name="hint_firearm_acquisition_address">Address</string>
+	<string name="hint_firearm_acquisition_price">Price</string>
+	<string name="hint_firearm_disposition_date">Date</string>
+	<string name="hint_firearm_disposition_to">To</string>
+	<string name="hint_firearm_disposition_license">License</string>
+	<string name="hint_firearm_disposition_address">Address</string>
+	<string name="hint_firearm_disposition_price">Price</string>
+	<string name="hint_firearm_note_text">Note</string>
+	<string name="hint_firearm_note_date">Date</string>
+
+	<string name="label_backup_file">FILE:</string>
+	<string name="label_backup_information">The backup process will archive all firearm, target and load information (including images) into the .zip file specified below.  This file may then be restored on any device with the Shooting application installed.</string>
+	<string name="label_restore_file">FILE:</string>
+	<string name="label_restore_information">Restoring from a previous backup .zip file will replace any existing information with the content in the backup archive.  All information contained in the database will be deleted prior to beginning the restoration process.</string>
+	<string name="label_restore_browse_failed">Unable to launch file browser</string>
+	<string name="label_firearm_list_empty">No firearms.</string>
+	<string name="label_firearm_list_item_image">Firearm Photo</string>
+	<string name="label_firearm_list_item_barrel_text">in. Barrel</string>
+	<string name="label_firearm_photo_image">Photo</string>
+	<string name="label_firearm_photo_list_photo">Firearm List Photo</string>
+	<string name="label_firearm_profile_no_photos">No photos.</string>
+	<string name="label_firearm_profile_make">MAKE:</string>
+	<string name="label_firearm_profile_model">MODEL:</string>
+	<string name="label_firearm_profile_serial">SERIAL NO:</string>
+	<string name="label_firearm_profile_type">TYPE:</string>
+	<string name="label_firearm_profile_caliber">CALIBER:</string>
+	<string name="label_firearm_profile_barrel">BARREL:</string>
+	<string name="label_firearm_profile_barrel_inches">inches</string>
+	<string name="label_firearm_acquisition_date">DATE:</string>
+	<string name="label_firearm_acquisition_from">FROM:</string>
+	<string name="label_firearm_acquisition_license">LICENSE:</string>
+	<string name="label_firearm_acquisition_address">ADDRESS:</string>
+	<string name="label_firearm_acquisition_price">PRICE:</string>
+	<string name="label_firearm_acquisition_empty">Acquisition data has not been entered for this firearm.</string>
+	<string name="label_firearm_disposition_date">DATE:</string>
+	<string name="label_firearm_disposition_to">TO:</string>
+	<string name="label_firearm_disposition_license">LICENSE:</string>
+	<string name="label_firearm_disposition_address">ADDRESS:</string>
+	<string name="label_firearm_disposition_price">PRICE:</string>
+	<string name="label_firearm_disposition_empty">Disposition data has not been entered for this firearm.</string>
+	<string name="label_firearm_note_list_empty">No notes.</string>
+	<string name="label_launch_gallery_failed">Unable to launch a photo selection app</string>
+	<string name="label_launch_camera_failed">Unable to launch camera</string>
+
+	<string name="confirm_firearm_delete">Deleting a firearm will delete the firearm as well as any associated notes, photos and targets.  Once deleted, the information cannot be restored.</string>
+	<string name="confirm_firearm_acquisition_delete">Delete firearm acquisition record?</string>
+	<string name="confirm_firearm_disposition_delete">Delete firearm disposition record?</string>
+	<string name="confirm_firearm_note_delete">Delete note?</string>
+
+	<!-- Targets -->
+	<string name="title_target">Target</string>
+	<string name="title_target_delete">Delete Target</string>
+	<string name="title_target_invalid_lot">Invalid Lot No.</string>
+
+	<string name="menu_target_list_search">Search</string>
+	<string name="menu_target_list_camera">Take Photo</string>
+	<string name="menu_target_list_gallery">Select Photo</string>
+	<string name="menu_target_save">Save</string>
+	<string name="menu_target_delete">Delete</string>
+
+	<string name="menu_context_target_edit">Edit</string>
+	<string name="menu_context_target_delete">Delete</string>
+
+	<string name="label_target_list_empty">No targets.</string>
+	<string name="label_target_list_item_image">Target</string>
+	<string name="label_target_list_item_grains">gr.\u0020</string>
+	<string name="label_target_list_item_yards">yds</string>
+	<string name="label_target_list_item_rounds">rds</string>
+	<string name="label_target_image">Target</string>
+	<string name="label_target_date">DATE:</string>
+	<string name="label_target_firearm">FIREARM:</string>
+	<string name="label_target_lot">LOT NO.:</string>
+	<string name="label_target_lot_or_ammo">- OR - </string>
+	<string name="label_target_ammo">AMMO:</string>
+	<string name="label_target_type">TARGET TYPE:</string>
+	<string name="label_target_distance">DISTANCE:</string>
+	<string name="label_target_distance_yards">yards</string>
+	<string name="label_target_shots">SHOTS:</string>
+	<string name="label_target_invalid_lot">The specified lot number is invalid.</string>
+	<string name="label_target_created_from_image">Target added</string>
+
+	<string name="hint_target_search">Search Targets</string>
+	<string name="hint_target_date">Date</string>
+	<string name="hint_target_firearm">Firearm</string>
+	<string name="hint_target_ammo">Ammo</string>
+	<string name="hint_target_distance">Distance</string>
+	<string name="hint_target_shots">Shots</string>
+	<string name="hint_target_notes">Notes</string>
+
+	<string name="confirm_target_delete">Delete target?</string>
+
+	<!-- Loads -->
+	<string name="title_load_list_sort">Sort Loads</string>
+	<string name="title_load_add">Add Load</string>
+	<string name="title_load_data">Load Data</string>
+	<string name="title_load_delete">Delete Load</string>
+	<string name="title_load_lot_add">Add Lot</string>
+	<string name="title_load_lot_edit">Lot #</string>
+	<string name="title_load_lot_delete">Delete Lot</string>
+	<string name="title_load_note_add">Add Note</string>
+	<string name="title_load_note_edit">Note</string>
+	<string name="title_load_note_delete">Delete Note</string>
+
+	<string name="tab_load_data">Data</string>
+	<string name="tab_load_lots">Lots</string>
+	<string name="tab_load_targets">Targets</string>
+	<string name="tab_load_notes">Notes</string>
+
+	<string name="menu_load_list_search">Search</string>
+	<string name="menu_load_list_add">Add</string>
+	<string name="menu_load_list_sort">Sort</string>
+	<string name="menu_load_data_edit">Edit</string>
+	<string name="menu_load_data_delete">Delete</string>
+	<string name="menu_load_data_save">Save</string>
+	<string name="menu_load_lot_add">Add</string>
+	<string name="menu_load_lot_save">Save</string>
+	<string name="menu_load_lot_delete">Delete</string>
+	<string name="menu_load_note_add">Add</string>
+	<string name="menu_load_note_save">Save</string>
+	<string name="menu_load_note_delete">Delete</string>
+
+	<string name="menu_context_load_view">View</string>
+	<string name="menu_context_load_edit_data">Edit Data</string>
+	<string name="menu_context_load_delete">Delete</string>
+	<string name="menu_context_load_lot_edit">Edit</string>
+	<string name="menu_context_load_lot_delete">Delete</string>
+	<string name="menu_context_load_note_edit">Edit</string>
+	<string name="menu_context_load_note_delete">Delete</string>
+
+	<string name="hint_load_search">Search Loads</string>
+	<string name="hint_load_caliber">Caliber</string>
+	<string name="hint_load_bullet">Bullet</string>
+	<string name="hint_load_charge">Charge</string>
+	<string name="hint_load_powder">Powder</string>
+	<string name="hint_load_primer">Primer</string>
+	<string name="hint_load_oal">OAL</string>
+	<string name="hint_load_crimp">Crimp</string>
+	<string name="hint_load_ccount">Count</string>
+	<string name="hint_load_lot">Lot</string>
+	<string name="hint_load_lot_date">Date</string>
+	<string name="hint_load_lot_ccount">Count</string>
+	<string name="hint_load_lot_primer">Primer</string>
+	<string name="hint_load_note_date">Date</string>
+	<string name="hint_load_note_text">Note</string>
+
+	<string name="label_load_list_empty">No loads.</string>
+	<string name="label_load_list_item_grains">gr.\u0020</string>
+	<string name="label_load_list_item_oal">in.</string>
+	<string name="label_load_data_caliber">CALIBER:</string>
+	<string name="label_load_data_bullet">BULLET:</string>
+	<string name="label_load_data_powder">POWDER:</string>
+	<string name="label_load_data_charge">CHARGE:</string>
+	<string name="label_load_data_charge_grains">grains</string>
+	<string name="label_load_data_primer">PRIMER:</string>
+	<string name="label_load_data_oal">OAL:</string>
+	<string name="label_load_data_oal_inches">inches</string>
+	<string name="label_load_data_crimp">CRIMP:</string>
+	<string name="label_load_lot_date">DATE:</string>
+	<string name="label_load_lot_ccount">COUNT:</string>
+	<string name="label_load_lot_powder_lot">POWDER LOT:</string>
+	<string name="label_load_lot_primer">PRIMER:</string>
+	<string name="label_load_lot_primer_lot">PRIMER LOT:</string>
+	<string name="label_load_lot_list_empty">No lots.</string>
+	<string name="label_load_lot_list_item_lot">Lot #</string>
+	<string name="label_load_note_list_empty">No notes.</string>
+
+	<string name="confirm_load_delete">Deleting a load will delete the load as well as any associated lots and notes.  Once deleted, the information cannot be restored.</string>
+	<string name="confirm_load_lot_delete">Delete lot?</string>
+	<string name="confirm_load_note_delete">Delete note?</string>
+
+	<string-array name="options_load_list_sort">
+		<item>Most Recently Loaded</item>
+		<item>Count Loaded</item>
+		<item>Caliber</item>
+		<item>Bullet</item>
+		<item>Powder</item>
+	</string-array>
+</resources>

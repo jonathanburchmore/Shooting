@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="@dimen/dialog_margin">
+		<TextView
+				android:id="@+id/label_restore_information"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginBottom="@dimen/restore_information_margin"
+				android:text="@string/label_restore_information" />
+
+		<TextView
+				android:id="@+id/label_restore_file"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/label_restore_information"
+				android:layout_alignParentLeft="true"
+				android:textColor="@android:color/holo_blue_dark"
+				android:text="@string/label_restore_file" />
+
+		<Button
+				android:id="@+id/restore_browse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/label_restore_file"
+				android:layout_alignParentRight="true"
+				android:text="@string/button_browse"/>
+
+		<EditText
+				android:id="@+id/restore_file"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/label_restore_file"
+				android:layout_alignParentLeft="true"
+				android:layout_toLeftOf="@id/restore_browse"
+				android:inputType="textUri" />
+	</RelativeLayout>
+</LinearLayout>
