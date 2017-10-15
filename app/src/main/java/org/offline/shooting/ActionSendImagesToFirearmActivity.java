@@ -1,3 +1,9 @@
+/*
+ * :vi ts=4 sts=4 sw=4
+ *
+ * Copyright (c) Jonathan Burchmore
+ */
+
 package org.offline.shooting;
 
 import android.support.v4.app.LoaderManager;
